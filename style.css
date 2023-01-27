@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Domine:wght@600&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Domine:wght@600&display=swap");
 
 * {
   margin: 0;
@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'architects daughter', cursive;
+  font-family: "architects daughter", cursive;
   padding: 1rem;
   background-color: rgb(245, 231, 225);
   height: 100vh;
@@ -21,8 +21,10 @@ header {
   margin-bottom: 1rem;
 }
 
-h1, h3, nav {
-  font-family: 'Domine', serif;
+h1,
+h3,
+nav {
+  font-family: "Domine", serif;
   color: rgb(121, 41, 41);
 }
 
@@ -30,7 +32,7 @@ h1, h3, nav {
 header a {
   width: 5rem;
   text-align: center;
-  padding: .25rem;
+  padding: 0.25rem;
   color: rgb(121, 41, 41);
   border: 1px solid black;
   border-width: 0 1px 0 0;
@@ -50,9 +52,10 @@ main > * {
   flex-wrap: wrap;
 }
 
-.airplane-card, .results-graph {
+.airplane-card,
+.results-graph {
   background-color: rgb(240, 239, 239);
-  border-radius: .5em;
+  border-radius: 0.5em;
   box-shadow: 1px 2px 2px gray;
 }
 
@@ -63,11 +66,33 @@ main > * {
 }
 
 .airplane-card img {
-  max-width: calc(100% - .1rem);
+  max-width: calc(100% - 0.1rem);
   display: block;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 /* media queries */
-
+@media screen and (max-width: 768px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: center;
+    margin: 10px 10px 16px;
+  }
+  header h1 {
+    margin-bottom: 15px;
+  }
+  header nav {
+    margin-bottom: 15px;
+  }
+  .airplane-list-container {
+    margin: 0px;
+    align-content: stretch;
+    justify-content: space-evenly;
+  }
+  .airplane-card {
+    width: fit-content;
+    margin: 5px 5px 5px 5px;
+  }
+}
 /* YOUR CODE HERE */
